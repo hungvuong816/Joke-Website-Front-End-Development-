@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dad Jokes - Web App</title>
+    <script src="app.js" type="application/javascript"></script>
+    <link href="app.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="https://www.maryville.edu/" style="float:left; padding: 0" ><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Maryville_University_logo.png/1024px-Maryville_University_logo.png" style="width:144px;height:43px;"/></a>
+        <b style="float:left; padding: 0pt 0pt 0pt 50pt; color:whitesmoke; font-size: 30pt; font-style: italic">Final Project - Dad Jokes</b>
+        <a href="About.html">About the Project</a>
+        <a href="SubmitJoke.html">Submit a Joke</a>
+        <a href="SearchJokeOnAPI.html">Search</a>
+        <a href="RandomJokeOnAPI.html">Random Joke</a>
+    </div>
+    
+    <div class="container">
+        <img src="https://image.ibb.co/mKDDaT/dad_jokes.png" style="width: 100%">
+
+
+
+    <div class="container" style="height: 90vh;">
+
+        <!--When clicking the button, it will make a call to the API and retreive a random joke-->
+        <div style="margin-top: 30pt;">
+            <h2>Load a New Random Joke</h2>
+            <button type="button" onclick="loadJoke()">Random Joke</button>
+            <div style="margin-top: 15pt;">
+                <b>Joke Id: </b> <a id="jokeId"></a>
+            </div>
+            <div style="margin-top: 30pt;">
+                <aside id="jokeData"></aside>
+            </div>
+            
+        </div>
+        <!--Clicking the Add to List button will call the addList function to append it to the "myList" unordered list-->
+        <div style="margin-top: 30pt;">
+            <h2>Add Joke to the List</h2>
+            <p id="webLink"></p>
+            <button onclick="addList()">Add to List</button>
+            <ul id="myList"></ul>
+        </div>
+
+    </div>  
+
+</body>
+
+
+</html>

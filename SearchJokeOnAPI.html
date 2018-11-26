@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dad Jokes - Web App</title>
+    <script src="app.js" type="application/javascript"></script>
+    <link href="app.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="https://www.maryville.edu/" style="float:left; padding: 0" ><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Maryville_University_logo.png/1024px-Maryville_University_logo.png" style="width:144px;height:43px;"/></a>
+        <b style="float:left; padding: 0pt 0pt 0pt 50pt; color:whitesmoke; font-size: 30pt; font-style: italic">Final Project - Dad Jokes</b>
+        <a href="About.html">About the Project</a>
+        <a href="SubmitJoke.html">Submit a Joke</a>
+        <a href="SearchJokeOnAPI.html">Search</a>
+        <a href="RandomJokeOnAPI.html">Random Joke</a>
+    </div>
+
+    <div class="container" style="height: 90vh;">
+        <div style="width: 100%; overflow: hidden;">
+            <div style="width: 600px; float: left; padding: 40pt">
+                
+                <!--When Inputing a Joke Id into the input box, clicking the button will run the searchJoke button and make an API call to retreive a specific joke-->
+                Input Joke Id: <input type="text" id="myText">
+                <button type="button" onclick="searchJoke()">Retrieve Joke</button>
+
+                <div style="margin-top: 30pt;">
+                    <aside id="jokeData"></aside>
+                </div>
+
+                <!--I have made this paragraph tag into a link using DOM methods-->
+                <div style="margin-top: 30pt;">
+                    <p>You can access the original website of this joke be going to the link below</p>
+                    <p id="webLink"></p>
+                </div>
+
+            </div>
+
+            <div style="float: right; padding: 40pt;">
+                <img src="https://image1.masterfile.com/getImage/NjEyOC0wODczNzk4N2VuLjAwMDAwMDAw=AI7kSo/6128-08737987en_Masterfile.jpg" >
+            </div>
+
+        </div>
+    </div>  
+
+</body>
+
+</html>
